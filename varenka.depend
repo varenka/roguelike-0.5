@@ -1,0 +1,208 @@
+# depslib dependency file v1.0
+1455995038 source:/home/varenka/Desktop/varenka/main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"map.h"
+	"player.h"
+	"game.h"
+	<X11/X.h>
+	<X11/keysym.h>
+	"colors.h"
+
+1455552162 source:/home/varenka/Desktop/varenka/src/entity.cpp
+	"entity.h"
+
+1455673251 /home/varenka/Desktop/varenka/include/entity.h
+
+1456001014 source:/home/varenka/Desktop/varenka/src/player.cpp
+	"player.h"
+
+1455998328 /home/varenka/Desktop/varenka/include/player.h
+	"vector2.h"
+	"vector3.h"
+	"item.h"
+	"colors.h"
+	"tile.h"
+
+1455674973 /home/varenka/Desktop/varenka/include/vector2.h
+
+1455553419 source:/home/varenka/Desktop/varenka/src/vector2.cpp
+	"vector2.h"
+
+1455993390 source:/home/varenka/Desktop/varenka/src/vector3.cpp
+	"vector3.h"
+
+1455993242 /home/varenka/Desktop/varenka/include/vector3.h
+	<time.h>
+	<cstdlib>
+	<string>
+	<sstream>
+	<math.h>
+
+1455553548 source:/home/varenka/Desktop/varenka/src/item.cpp
+	"item.h"
+
+1455992999 /home/varenka/Desktop/varenka/include/item.h
+
+1456000657 source:/home/varenka/Desktop/varenka/src/map.cpp
+	"map.h"
+
+1455848784 /home/varenka/Desktop/varenka/include/map.h
+	"tile.h"
+	"io.h"
+	"vector3.h"
+	<string>
+	<vector>
+	<iostream>
+	<time.h>
+	<cstdlib>
+	<sstream>
+
+1456009350 /home/varenka/Desktop/varenka/include/tile.h
+	"entity.h"
+	"vector3.h"
+	"colors.h"
+	<vector>
+
+1456000836 source:/home/varenka/Desktop/varenka/src/tile.cpp
+	"tile.h"
+
+1455560330 source:/home/varenka/Desktop/varenka/src/io.cpp
+	"io.h"
+
+1455673315 /home/varenka/Desktop/varenka/include/io.h
+	<fstream>
+	<iostream>
+	<string>
+	<cstdlib>
+
+1456000920 source:/home/varenka/Desktop/varenka/src/game.cpp
+	"game.h"
+
+1455998661 /home/varenka/Desktop/varenka/include/game.h
+	<iostream>
+	<string>
+	"map.h"
+	"player.h"
+
+1455660727 source:/home/varenka/Desktop/varenka/colors.cpp
+	"colors.h"
+
+1455660924 /home/varenka/Desktop/varenka/colors.h
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+
+1455661547 /home/varenka/Desktop/varenka/include/colors.h
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+
+1455660727 source:/home/varenka/Desktop/varenka/src/colors.cpp
+	"colors.h"
+
+1456094603 source:/home/varenka/Desktop/roguelike-master/main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"map.h"
+	"player.h"
+	"game.h"
+	"ray.h"
+	<X11/keysym.h>
+	"colors.h"
+
+1456016545 /home/varenka/Desktop/roguelike-master/include/map.h
+	"tile.h"
+	"io.h"
+	"vector3.h"
+	<string>
+	<vector>
+	<iostream>
+	<time.h>
+	<cstdlib>
+	<sstream>
+
+1456090510 /home/varenka/Desktop/roguelike-master/include/tile.h
+	"entity.h"
+	"vector3.h"
+	"colors.h"
+	<vector>
+
+1456016545 /home/varenka/Desktop/roguelike-master/include/entity.h
+
+1456092648 /home/varenka/Desktop/roguelike-master/include/vector3.h
+	<time.h>
+	<cstdlib>
+	<string>
+	<sstream>
+	<math.h>
+
+1456016545 /home/varenka/Desktop/roguelike-master/include/colors.h
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+
+1456090854 /home/varenka/Desktop/roguelike-master/include/io.h
+	<fstream>
+	<iostream>
+	<string>
+	<cstdlib>
+
+1456087295 /home/varenka/Desktop/roguelike-master/include/player.h
+	"vector2.h"
+	"vector3.h"
+	"item.h"
+	"colors.h"
+	"tile.h"
+
+1456016545 /home/varenka/Desktop/roguelike-master/include/vector2.h
+
+1456016545 /home/varenka/Desktop/roguelike-master/include/item.h
+
+1456090831 /home/varenka/Desktop/roguelike-master/include/game.h
+	<iostream>
+	<string>
+	"map.h"
+	"player.h"
+
+1456016545 source:/home/varenka/Desktop/roguelike-master/src/colors.cpp
+	"colors.h"
+
+1456016545 source:/home/varenka/Desktop/roguelike-master/src/entity.cpp
+	"entity.h"
+
+1456093880 source:/home/varenka/Desktop/roguelike-master/src/game.cpp
+	"game.h"
+
+1456090922 source:/home/varenka/Desktop/roguelike-master/src/io.cpp
+	"io.h"
+
+1456016545 source:/home/varenka/Desktop/roguelike-master/src/item.cpp
+	"item.h"
+
+1456090661 source:/home/varenka/Desktop/roguelike-master/src/map.cpp
+	"map.h"
+
+1456087301 source:/home/varenka/Desktop/roguelike-master/src/player.cpp
+	"player.h"
+
+1456082932 source:/home/varenka/Desktop/roguelike-master/src/tile.cpp
+	"tile.h"
+
+1456016545 source:/home/varenka/Desktop/roguelike-master/src/vector2.cpp
+	"vector2.h"
+
+1456092643 source:/home/varenka/Desktop/roguelike-master/src/vector3.cpp
+	"vector3.h"
+
+1456094922 source:/home/varenka/Desktop/roguelike-master/src/ray.cpp
+	"ray.h"
+
+1456094063 /home/varenka/Desktop/roguelike-master/include/ray.h
+	"vector3.h"
+

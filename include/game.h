@@ -5,6 +5,7 @@
 #include <string>
 #include "map.h"
 #include "player.h"
+#include "ray.h"
 
 using namespace std;
 
@@ -25,6 +26,7 @@ class game
         void spawnItem(item, vector3);
         bool isTransparent(vector3f);
         bool isVisible(vector3);
+        bool tileContains(vector3, vector3f);
         void updateLighting();
 
         map currentMap;

@@ -21,7 +21,7 @@ int main()
     srand(time(NULL));
     map test = map();
     vector3 mapSize;
-    mapSize.set(51, 51, 51);
+    mapSize.set(10, 10, 10);
     test.setSize(mapSize);
     test.randomizeTiles();
     game g;

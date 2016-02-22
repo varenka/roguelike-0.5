@@ -182,13 +182,13 @@ void game::printMap(int layer)
     for (int j = 0; j < currentMap.size.z; j++) {
         for (int i = 0; i < currentMap.size.x; i++) {
             dist.set(i, layer, j);
-            if(currentPlayer.position.distanceTo(dist) <= currentPlayer.sightDistance) {
+            if(currentPlayer.position.distanceTo(dist) <= currentPlayer.sightDistance && isVisible(dist)) {
                 cout << currentMap._map[i][layer][j].getString();
                 currentMap._map[i][layer][j].known = true;
             }else if(currentMap._map[i][layer][j].known) {
                 cout << color::custom(currentMap.getTile(dist)->getlastc(), FG_LIGHT_BLUE, FAINT);
             }else {
-                cout << " ";
+                cout << "?";
             }
             //cout << _map[i][layer][j].c;
             //cout << _map[i][layer][j].ids.size();
@@ -201,17 +201,62 @@ void game::printMap(int layer)
 
 bool game::isVisible(vector3 v)
 {
-
+    vector3f checkEndpoint;
+    checkEndpoint.set(currentPlayer.position.x + 0.5, currentPlayer.position.y, currentPlayer.position.z + 0.5);
+    vector3f checkDir;
+    checkDir.set(v.x + 0.5, v.y, v.z + 0.5);
+    ray check;
+    check.set(checkEndpoint, checkDir);
+    vector3f checkPoint;
+    checkPoint.setv(checkEndpoint);
+    float i = 0;
+    while(i < checkEndpoint.distanceTo(checkDir)) {
+        //cout << "There are a lot of these." << endl;
+        cout << "i = " << i << endl;
+        checkPoint.z += check.slope();
+        checkPoint.x ++;
+        cout << "checking: " << checkPoint.gets() << endl;
+        if(!(isTransparent(checkPoint))) {
+            return false;
+        }
+        i ++;
+        /*if(i > checkEndpoint.distanceTo(checkDir)) {
+            checkPoint += check.slope() % i;
+            checkPoint.x
+        }*/
+    }
     return true;
 }
 
 bool game::isTransparent(vector3f v)
 {
-
-    return false;
+    for(int j = 0; j < currentMap.size.x; j++) {
+        for(int i = 0; i < currentMap.size.z; i++) {
+            vector3 check;
+            check.set(j, currentPlayer.position.y, i);
+            if(tileContains(check, v) && !(currentMap.getTile(check)->isPassable())) {
+                return false;
+            }
+        }
+    }
+    return true;
 }
 
 void game::updateLighting()
 {
 
+}
+
+//returns true if the tile at t contains point p
+bool game::tileContains(vector3 t, vector3f p)
+{
+    vector3f topLeft, bottomRight;
+    bottomRight.set(t.x + 1, t.y, t.z + 1);
+    topLeft.set(t.x, t.y, t.z);
+    if(p.x <= bottomRight.x && p.x >= topLeft.x ) {
+        if(p.z <= topLeft.z && p.z >= bottomRight.z) {
+            return true;
+        }
+    }
+    return false;
 }

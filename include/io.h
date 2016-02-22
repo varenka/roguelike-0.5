@@ -13,7 +13,8 @@ class io
         io();
         virtual ~io();
         static int randomInt(int, int);
-        static int round(float);
+        static int roundDown(float);
+        static int roundUp(float);
 };
 
 #endif // IO_H

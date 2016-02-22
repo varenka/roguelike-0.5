@@ -104,7 +104,7 @@
 1455660727 source:/home/varenka/Desktop/varenka/src/colors.cpp
 	"colors.h"
 
-1456094603 source:/home/varenka/Desktop/roguelike-master/main.cpp
+1456103265 source:/home/varenka/Desktop/roguelike-master/main.cpp
 	<iostream>
 	<string>
 	<fstream>
@@ -126,7 +126,7 @@
 	<cstdlib>
 	<sstream>
 
-1456090510 /home/varenka/Desktop/roguelike-master/include/tile.h
+1456100605 /home/varenka/Desktop/roguelike-master/include/tile.h
 	"entity.h"
 	"vector3.h"
 	"colors.h"
@@ -147,7 +147,7 @@
 	<string>
 	<sstream>
 
-1456090854 /home/varenka/Desktop/roguelike-master/include/io.h
+1456100320 /home/varenka/Desktop/roguelike-master/include/io.h
 	<fstream>
 	<iostream>
 	<string>
@@ -164,11 +164,12 @@
 
 1456016545 /home/varenka/Desktop/roguelike-master/include/item.h
 
-1456090831 /home/varenka/Desktop/roguelike-master/include/game.h
+1456103075 /home/varenka/Desktop/roguelike-master/include/game.h
 	<iostream>
 	<string>
 	"map.h"
 	"player.h"
+	"ray.h"
 
 1456016545 source:/home/varenka/Desktop/roguelike-master/src/colors.cpp
 	"colors.h"
@@ -176,22 +177,22 @@
 1456016545 source:/home/varenka/Desktop/roguelike-master/src/entity.cpp
 	"entity.h"
 
-1456093880 source:/home/varenka/Desktop/roguelike-master/src/game.cpp
+1456103219 source:/home/varenka/Desktop/roguelike-master/src/game.cpp
 	"game.h"
 
-1456090922 source:/home/varenka/Desktop/roguelike-master/src/io.cpp
+1456100345 source:/home/varenka/Desktop/roguelike-master/src/io.cpp
 	"io.h"
 
 1456016545 source:/home/varenka/Desktop/roguelike-master/src/item.cpp
 	"item.h"
 
-1456090661 source:/home/varenka/Desktop/roguelike-master/src/map.cpp
+1456100623 source:/home/varenka/Desktop/roguelike-master/src/map.cpp
 	"map.h"
 
 1456087301 source:/home/varenka/Desktop/roguelike-master/src/player.cpp
 	"player.h"
 
-1456082932 source:/home/varenka/Desktop/roguelike-master/src/tile.cpp
+1456100607 source:/home/varenka/Desktop/roguelike-master/src/tile.cpp
 	"tile.h"
 
 1456016545 source:/home/varenka/Desktop/roguelike-master/src/vector2.cpp

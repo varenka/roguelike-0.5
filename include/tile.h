@@ -34,6 +34,7 @@ class tile
         bool isPassable();
         bool isPassableUpwards();
         bool isPassableDownwards();
+
         void reset();
         void setup(int, int);
 
